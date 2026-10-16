@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anvil Gym Tracker - Support, Privacy, and Terms</title>
+  <meta name="description" content="Official support, privacy policy, and terms page for Anvil Gym Tracker.">
+  <style>
+    :root {
+      --bg: #000000;
+      --card: #101010;
+      --text: #f5f5f5;
+      --muted: #b3b3b3;
+      --border: #2a2a2a;
+      --red: #ff3b3b;
+      --green: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255, 59, 59, 0.14), transparent 34%),
+        linear-gradient(180deg, #050505 0%, #000000 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .shell {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .hero,
+    .card {
+      background: rgba(16, 16, 16, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .brand-mark {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: #000000;
+      border: 1px solid var(--border);
+      position: relative;
+      flex: 0 0 auto;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      width: 12px;
+      height: 36px;
+      background: #ffffff;
+    }
+
+    .brand-mark::before {
+      left: 16px;
+    }
+
+    .brand-mark::after {
+      right: 16px;
+    }
+
+    .brand-mark span {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: 31px;
+      height: 10px;
+      background: #ffffff;
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--red);
+    }
+
+    p,
+    li {
+      color: var(--text);
+    }
+
+    .muted,
+    .meta {
+      color: var(--muted);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: #141414;
+      padding: 10px 14px;
+      border-radius: 999px;
+    }
+
+    .nav a:hover {
+      border-color: var(--red);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 22px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    a {
+      color: #ffffff;
+    }
+
+    .ok {
+      color: var(--green);
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span></div>
+        <div>
+          <h1>Anvil Gym Tracker</h1>
+          <p class="muted">Support, privacy, and terms for the Android app.</p>
+        </div>
+      </div>
+      <p>
+        Anvil Gym Tracker is an offline gym logging app. It stores workout data locally on the device,
+        with optional private Google Drive backup. Logging works without sign-in;
+        Google account authorization is needed only when you connect cloud backup.
+      </p>
+      <div class="nav">
+        <a href="#support">Support</a>
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms">Terms</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card" id="support">
+        <h2>Support</h2>
+        <p>Support email: <a href="mailto:anvil.tech.support@gmail.com">anvil.tech.support@gmail.com</a></p>
+        <p>App name: Anvil Gym Tracker</p>
+        <p class="meta">Last updated: October 16, 2026</p>
+        <ul>
+          <li>Questions about logging, backup, sync, reminders, or ads can be sent by email.</li>
+          <li>Open Settings &gt; Cloud Backup &gt; Connect Google Drive. Choose your account and allow access to private app storage. Later Back Up Now actions normally need one tap.</li>
+          <li>If a backup exists, check its date and record count, then confirm Restore to merge it into this device. If none exists, the app creates the first backup automatically.</li>
+          <li>Daily automatic backup is enabled after connecting, preferably near 2:00 AM local time. Android may delay it. Completion notifications require notification permission. You can turn automatic backup off or disconnect in Cloud Backup.</li>
+          <li>The private file is anvil_gym_tracker_backup.json. It is not visible in My Drive. Legacy CSV backups are not automatically imported or deleted.</li>
+          <li>Please include app version, Android version, and a short issue summary when requesting help.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p class="ok">Offline logging without sign-in. Optional Google Drive connection. No Firebase or developer-run workout analytics.</p>
+        <ul>
+          <li>Workout entries, personal records, and other tracking values are stored locally on the device.</li>
+          <li>Android system cloud backup is disabled. Google Drive backup is optional and starts only after you connect Google Drive in Settings &gt; Cloud Backup and authorize private app storage.</li>
+          <li>The app requests the drive.appdata scope, not access to Gmail, contacts, photos or unrelated Drive files. Google handles account selection and permission screens; the app never receives your Google password.</li>
+          <li>The app reads the connected account email from Drive and stores it locally with your automatic-backup preference, last successful backup time, operation cooldowns and temporary restore/file identifiers. Google manages authorization; the app does not persist access or refresh tokens in preferences or backup files. Tokens, account emails and workout records are not written to app logs.</li>
+          <li>Backup sends workout entries, personal records, tracking values, rest-day flags and muscle selections to private storage in your own Drive. JSON also contains stable record IDs, creation/update timestamps and app/schema metadata. Account credentials, ad consent and notification permissions are excluded. The developer does not run a workout-data server.</li>
+          <li>Automatic backup uses network-constrained Android WorkManager tasks, preferably near 2:00 AM local time. Battery restrictions, network conditions, account quota and revoked permission can delay or prevent it. Background tasks never open sign-in screens. Success is recorded only after the uploaded snapshot is read back and verified.</li>
+          <li>Turn automatic backup off or choose Disconnect in Settings &gt; Cloud Backup. Disconnect requires confirmation, stops automatic backup and attempts to revoke authorization; it does not delete local records or the Drive backup. If revocation fails, remove the app in your Google account's connections.</li>
+          <li>Restore requires a preview and confirmation. It inserts missing record IDs and keeps newer versions of matching IDs in a local transaction, without clearing local records. Backup combines cloud and local records before updating the existing file, and stops on conflicting cloud changes. Empty local data cannot overwrite a backup containing records.</li>
+          <li>Local retention: records remain until you edit/delete them, restore newer versions, clear app data or uninstall. Connection metadata remains until disconnect or clearing app data; cooldown metadata can remain until app data is cleared.</li>
+          <li>Cloud retention: the app maintains one private JSON snapshot, updated on successful backups, in Drive's hidden appDataFolder. It remains subject to Google's account and retention policies. Delete hidden app data through Google Drive Settings &gt; Manage apps when no longer wanted. Uninstalling or disconnecting does not delete it.</li>
+          <li>There are no deletion tombstones: a locally deleted row may return from an older backup during restore. To remove all copies, disconnect every device, clear unwanted local data and delete the hidden Drive app data before reconnecting.</li>
+          <li>Security: local records use Android's app sandbox; Drive requests use HTTPS. Private app data cannot be shared like normal Drive files. JSON is not end-to-end encrypted by this app, and its integrity hash is not encryption. Google processes and protects cloud data under <a href="https://policies.google.com/privacy">its privacy policy</a>. No system guarantees absolute security.</li>
+          <li>Notifications include a daily 8:00 PM reminder and backup or sync results. On Android 13 and higher, the app asks for notification permission. It can be denied without preventing use of the app.</li>
+          <li>The app includes RECEIVE_BOOT_COMPLETED so reminders can be scheduled again after a device restart.</li>
+          <li>The app includes INTERNET and ACCESS_NETWORK_STATE for optional Google authorization/Drive sync and Google Mobile Ads delivery. Offline logging does not require internet.</li>
+          <li>The app uses the Google Mobile Ads SDK to display one banner below the home week calendar. The banner does not block the workout form.</li>
+          <li>Google Mobile Ads may process IP addresses, device identifiers, ad interactions, and diagnostic information to deliver ads, prevent fraud, and measure performance. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+          <li>When required, Google presents an ad consent form before ad requests. You can reopen required privacy choices from the app's About screen.</li>
+          <li>The app does not use Firebase or developer-run workout analytics. Google advertising SDKs include measurement components and may process advertising and diagnostic information as described above.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="terms">
+        <h2>Terms of Use</h2>
+        <ul>
+          <li>The app is provided as a local workout logging tool for personal use.</li>
+          <li>Check the last successful backup time and keep important records safe. Optional Drive backup requires a Google account, internet, available storage and valid authorization. Google may require permission again after revocation or reinstallation.</li>
+          <li>Backups combine local/cloud records and update one private JSON snapshot. Restore is a separate preview-and-confirm action; it merges UUIDs and keeps newer records without wiping local data.</li>
+          <li>Automatic backups are inexact, preferably near 2:00 AM local time. Manual backup and restore have separate 5-minute cooldowns; automatic backups require at least 20 hours since the last successful backup. Concurrent operations are blocked.</li>
+          <li>JSON backups have no app-level end-to-end encryption. Delete hidden Drive app data separately if you no longer want cloud copies. Legacy CSV files remain untouched and are not automatically converted.</li>
+          <li>The user can delete local app data using Android app settings or by uninstalling the app.</li>
+          <li>The developer may update app features, policies, or UI over time.</li>
+          <li>Use of the app does not replace medical, health, or coaching advice.</li>
+          <li>By using the app, the user accepts these terms and the privacy policy on this page.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
